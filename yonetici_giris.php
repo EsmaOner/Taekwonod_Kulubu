@@ -72,16 +72,22 @@ $baglanti->close();
             color: #3498db;
         }
 
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 6px;
-            background-color: #333;
-            color: #fff;
-            font-size: 16px;
-        }
+       form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* inputları yatay ortalar */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* kutu genişliğini biraz daralttık, form içinde ortalanacak */
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
 
         button {
             width: 100%;
