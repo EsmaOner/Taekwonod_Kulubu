@@ -26,38 +26,59 @@ if ($_POST) {
     <meta charset="UTF-8">
     <title>Kayıt Ol</title>
     <style>
-        body {
-            background: linear-gradient(to right, #141e30, #243b55);
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
             font-family: 'Segoe UI', sans-serif;
             color: white;
+            background: linear-gradient(to right, #141e30, #243b55);
+            display: flex;
+            flex-direction: column;
         }
+
         .container {
             width: 380px;
-            margin: 60px auto;
+            margin: auto; /* dikey ve yatay ortalama */
             padding: 30px;
             background: rgba(0, 0, 0, 0.4);
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            text-align: center; /* tüm içerik ortalı */
         }
+
         h2 {
-            text-align: center;
             margin-bottom: 20px;
             color: #fff;
+            text-align: center;
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         input {
-            width: 100%;
+            width: 85%;
             padding: 12px;
             margin: 8px 0;
             border: none;
             border-radius: 6px;
             font-size: 14px;
         }
-        input[type="text"], input[type="password"] {
+
+        input[type="text"], input[type="password"], input[type="email"] {
             background: #fff;
             color: #000;
         }
+
         button {
-            width: 100%;
+            width: 85%;
             padding: 12px;
             background-color: #27ae60;
             border: none;
@@ -66,25 +87,49 @@ if ($_POST) {
             border-radius: 6px;
             margin-top: 15px;
             cursor: pointer;
+            font-size: 15px;
         }
+
         button:hover {
             background-color: #219150;
         }
+
         .link {
             display: block;
             text-align: center;
-            margin-top: 12px;
+            margin-top: 15px;
             color: #a9dcff;
             text-decoration: none;
         }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
         .message {
             text-align: center;
             margin-top: 15px;
             color: #ff4b4b;
         }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 16px;
+            margin-top: auto; /* footer'ı en alta iter */
+        }
+
+        footer div {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
     </style>
 </head>
 <body>
+
 <div class="container">
     <h2>Kayıt Ol</h2>
     <form method="post">
@@ -96,19 +141,10 @@ if ($_POST) {
     <a class="link" href="giris.php">Zaten hesabın var mı? Giriş yap</a>
     <?php if ($mesaj) echo "<p class='message'>$mesaj</p>"; ?>
 </div>
-<footer style="
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 30px 0;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <p style="margin: 0;">&copy; <?= date('Y') ?> Taekwondo Kulübü. Tüm hakları saklıdır.</p>
+
+<footer>
+    <div>
+        <p>&copy; <?= date('Y') ?> Taekwondo Kulübü. Tüm hakları saklıdır.</p>
     </div>
 </footer>
 
