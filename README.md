@@ -14,7 +14,7 @@ Bu proje, bir taekwondo kulübü için geliştirdiğim dinamik bir web sitesidir
 ## Proje Görüntüleri
 
 ### Ana Sayfa
-![Ana Sayfa Görüntüsü](anasayfa.png) <-- YÜKLEDİĞİNİZ GÖRSELİN ADINI YAZIN
+![Ana Sayfa Görüntüsü](anasayfa.png) 
 
 ### Yönetici Paneli (varsa)
-![Yönetici Paneli Görüntüsü](yönetici_paneli.png) <-- YÜKLEDİĞİNİZ GÖRSELİN ADINI YAZIN
+![Yönetici Paneli Görüntüsü](yönetici_paneli.png)
