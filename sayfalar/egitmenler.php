@@ -15,11 +15,11 @@ $egitmenler = [
     <style>
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to right,rgb(92, 93, 94),rgb(41, 42, 43));
-            margin: 0;
-            padding: 0;
-        }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgb(92, 93, 94), rgb(41, 42, 43));
+    margin: 0;
+    padding: 0 0 100px 0; /* Alt boşluk: footer üstüne gelmesin */
+}
 
         .container {
             max-width: 1200px;
@@ -159,15 +159,17 @@ $egitmenler = [
         </div>
     </div>
    <footer style="
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     color: #ecf0f1;
-    padding: 30px 0;
+    padding: 20px 0;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    position: relative;
-    bottom: 0;
+    position: fixed;         /* Sabitlenir */
+    bottom: 0;               /* En altta */
+    left: 0;
     width: 100%;
+    z-index: 1000;
 ">
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
         <p style="margin: 0; color: #ecf0f1;">&copy; <?= date('Y') ?> Taekwondo Kulübü. Tüm hakları saklıdır.</p>
