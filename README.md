@@ -9,7 +9,7 @@ Bu proje, bir taekwondo kulübü için geliştirdiğim dinamik bir web sitesidir
 ## Kullanılan Teknolojiler
 * **Backend:** PHP
 * **Frontend:** HTML, CSS
-* **Veritabanı:** MySQL
+* **Veritabanı:** MsSQL
 
 ## Proje Görüntüleri
 
