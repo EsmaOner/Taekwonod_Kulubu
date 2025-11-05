@@ -45,7 +45,7 @@ Bu proje, bir taekwondo kulübü için geliştirdiğim dinamik bir web sitesidir
 
 
  # --DİĞER PROJELER--
-# Petify_Tasarıim
+# Petify Online Phetshop Sitesi
 
 Petifiy adında kedi ve köpek ürünleri satan bir Phetshop E-Ticaret sitesi <br/>
 -Gurup Projesi <br/>
