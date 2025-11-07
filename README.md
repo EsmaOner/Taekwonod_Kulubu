@@ -70,8 +70,4 @@ https://www.figma.com/proto/X1ihVHEiID6OZBEtrEXVo0/yeni?node-id=6-121&t=1McBIfeK
 --Kedi Mamaları Sayfası
 https://www.figma.com/proto/X1ihVHEiID6OZBEtrEXVo0/yeni?node-id=208-892&t=1McBIfeK8Ee5i7Md-1
 
- # --DİĞER PROJELER--
 
- Photoshop_Kitap Kapağı
-
- ![Simyacı](kitap_kapağı_tasarımı.png)
